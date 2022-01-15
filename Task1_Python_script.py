@@ -19,10 +19,10 @@ def get_page():
     url = input("Enter url of a medium article: ")
     # Code ends here
 
-#     # handling possible error
-#     if not re.match(r'https?://medium.com/', url):
-#         print('Please enter a valid website, or make sure it is a medium article')
-#         sys.exit(1)
+    # handling possible error
+    if not re.match(r'https?://medium.com/', url):
+        print('Please enter a valid website, or make sure it is a medium article')
+        sys.exit(1)
 
     # Code here - Call get method in requests object, pass url and collect it in res
     res = requests.get(
